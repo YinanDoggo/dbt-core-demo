@@ -1,0 +1,14 @@
+version: 2
+
+models:
+    - name: test
+      description: "test table"
+      columns:
+          - name: upi
+            tests:
+              - unique
+              - not null
+          - name: taxid
+            tests:
+                - unique
+                - not null
